@@ -1,0 +1,416 @@
+/* Custom styles for SudoSu documentation */
+
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.page-header {
+  background: #159957;
+  background: linear-gradient(120deg, #155799, #159957);
+  padding: 3rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.project-name {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.project-tagline {
+  font-size: 1.25rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* Navigation styles */
+.main-nav {
+  background: #159957;
+  background: linear-gradient(120deg, #155799, #159957);
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: '';
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 0.3rem;
+  z-index: 1000;
+  margin-top: 0.5rem;
+}
+
+.nav-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s;
+}
+
+.dropdown-content a:hover {
+  background: #f1f1f1;
+  color: #155799;
+}
+
+/* Main content styles */
+.main-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.main-content h1, 
+.main-content h2, 
+.main-content h3, 
+.main-content h4, 
+.main-content h5, 
+.main-content h6 {
+  color: #155799;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.main-content h1 {
+  font-size: 2.2rem;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3rem;
+}
+
+.main-content h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3rem;
+}
+
+/* Code blocks */
+.main-content pre {
+  background-color: #f6f8fa;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  overflow: auto;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  border: 1px solid #e1e4e8;
+}
+
+.main-content code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9rem;
+  background-color: rgba(27, 31, 35, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 0.3rem;
+}
+
+.main-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Tables */
+.main-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.main-content table th,
+.main-content table td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e1e4e8;
+}
+
+.main-content table th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+}
+
+.main-content table tr:nth-child(2n) {
+  background-color: #f8f9fa;
+}
+
+/* Links */
+.main-content a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.main-content a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  color: white;
+  background-color: #155799;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #1e88e5;
+  text-decoration: none;
+}
+
+/* Skip link */
+#skip-to-content {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+#skip-to-content:focus {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  height: auto;
+  width: auto;
+  clip: auto;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  z-index: 1001;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eaecef;
+  color: #586069;
+  font-size: 0.9rem;
+}
+
+/* Mermaid diagrams */
+.mermaid {
+  margin: 2rem 0;
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 42em) {
+  .page-header {
+    padding: 2rem 1rem;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav-dropdown {
+    width: 100%;
+  }
+  
+  .dropdown-content {
+    position: static;
+    display: block;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 0;
+  }
+  
+  .dropdown-content a {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .project-name {
+    font-size: 2rem;
+  }
+}
+
+/* Custom components */
+.feature-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #155799;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Callouts */
+.callout {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid;
+  border-radius: 0.3rem;
+}
+
+.callout-info {
+  background-color: #e3f2fd;
+  border-color: #1e88e5;
+}
+
+.callout-warning {
+  background-color: #fff8e1;
+  border-color: #ffc107;
+}
+
+.callout-danger {
+  background-color: #ffebee;
+  border-color: #f44336;
+}
+
+.callout-success {
+  background-color: #e8f5e9;
+  border-color: #4caf50;
+}
+
+/* Code copy button */
+.code-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  background-color: #f1f3f4;
+  border: 1px solid #e1e4e8;
+  border-bottom: none;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.code-header + pre {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.copy-button {
+  background-color: #e1e4e8;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #d1d5da;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10rem;
+  margin-right: 0.5rem;
+}
+
+.badge-primary {
+  color: white;
+  background-color: #155799;
+}
+
+.badge-secondary {
+  color: white;
+  background-color: #6c757d;
+}
+
+.badge-success {
+  color: white;
+  background-color: #4caf50;
+}
+
+.badge-info {
+  color: white;
+  background-color: #1e88e5;
+}
