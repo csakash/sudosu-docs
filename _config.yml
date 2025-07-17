@@ -1,0 +1,70 @@
+# GitHub Pages Configuration for AI Terminal Copilot Documentation
+
+# Site settings
+title: "SudoSu"
+description: "Comprehensive documentation for SudoSu - An AI-powered terminal copilot with multi-agent workflows"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Theme
+theme: minima
+remote_theme: pages-themes/cayman@v0.2.0
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Collections
+collections:
+  specs:
+    output: true
+    permalink: /:collection/:name/
+  steering:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Project Overview"
+    url: "/project-overview"
+  - title: "Specifications"
+    url: "/specs/"
+  - title: "Development Guidelines"
+    url: "/steering/"
+
+# GitHub repository
+repository: "your-username/ai-terminal-copilot-docs"
+
+# SEO settings
+author: "AI Terminal Copilot Team"
+twitter:
+  username: your-twitter-handle
+  card: summary_large_image
+
+# Social links
+github_username: https://github.com/csakash
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include files
+include:
+  - _pages
