@@ -1,3 +1,9 @@
+---
+layout: default
+title: Implementation Tasks
+description: Complete implementation plan with 14 major task groups for the AI Terminal Copilot
+---
+
 # AI Terminal Copilot - Implementation Plan
 
 ## Overview

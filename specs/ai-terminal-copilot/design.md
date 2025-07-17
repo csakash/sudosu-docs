@@ -1,3 +1,9 @@
+---
+layout: default
+title: Design Document
+description: Detailed system architecture and technical specifications for the AI Terminal Copilot
+---
+
 # AI Terminal Copilot - Design Document
 
 ## Overview

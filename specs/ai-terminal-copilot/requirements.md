@@ -1,3 +1,9 @@
+---
+layout: default
+title: Requirements Document
+description: Comprehensive requirements specification for the AI Terminal Copilot system
+---
+
 # AI Terminal Copilot - Requirements Document
 
 ## Introduction

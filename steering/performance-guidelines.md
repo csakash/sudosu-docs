@@ -1,6 +1,7 @@
 ---
-inclusion: fileMatch
-fileMatchPattern: '**/performance_optimizer.py'
+layout: default
+title: Performance Guidelines
+description: Detailed performance optimization strategies, caching patterns, and monitoring guidelines for the AI Terminal Copilot
 ---
 
 # Performance Guidelines for AI Terminal Copilot

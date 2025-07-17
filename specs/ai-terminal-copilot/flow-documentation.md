@@ -1,3 +1,9 @@
+---
+layout: default
+title: Flow Documentation
+description: Detailed flow diagrams and explanations for Agent Mode, Chat Mode, and Multi-Agent workflows
+---
+
 # AI Terminal Copilot - Flow Documentation
 
 ## Overview

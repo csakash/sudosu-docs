@@ -1,3 +1,9 @@
+---
+layout: default
+title: Project Overview
+description: Comprehensive overview of the AI Terminal Copilot (SudoSu) project
+---
+
 # AI Terminal Copilot (SudoSu) - Project Overview
 
 ## Project Summary

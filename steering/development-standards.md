@@ -1,5 +1,7 @@
 ---
-inclusion: always
+layout: default
+title: Development Standards
+description: Comprehensive coding standards, testing guidelines, and best practices for Python backend and JavaScript frontend
 ---
 
 # Development Standards for AI Terminal Copilot

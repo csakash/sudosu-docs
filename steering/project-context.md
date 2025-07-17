@@ -1,5 +1,7 @@
 ---
-inclusion: always
+layout: default
+title: Project Context
+description: Essential project context including technology stack, architecture principles, and development patterns
 ---
 
 # AI Terminal Copilot Project Context

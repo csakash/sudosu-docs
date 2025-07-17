@@ -44,16 +44,16 @@ navigation:
     url: "/steering/"
 
 # GitHub repository
-repository: "your-username/ai-terminal-copilot-docs"
+repository: "YOUR-USERNAME/YOUR-REPO-NAME"
 
 # SEO settings
 author: "AI Terminal Copilot Team"
 twitter:
-  username: your-twitter-handle
+  username: your-twitter-handle  # Optional: replace with your handle
   card: summary_large_image
 
 # Social links
-github_username: https://github.com/csakash
+github_username: YOUR-USERNAME
 
 # Exclude from processing
 exclude:
